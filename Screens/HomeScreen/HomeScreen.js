@@ -7,8 +7,21 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { SearchBar } from 'react-native-screens';
 import { TextInput } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
+import { createStackNavigator } from '@react-navigation/stack';
+import ProfileScreen from '../ProfileScreen/ProfileScreen';
+
+const Stack = createStackNavigator();
 
 export default function HomeScreen() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name='Default' component={DefaultHomeScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+      <Stack.Screen name='Profile' component={ProfileScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+    </Stack.Navigator>
+  );
+}
+
+function DefaultHomeScreen() {
 
   let items = getShoeData();
   const [shoeData, setShoeData] = useState(items);
@@ -74,8 +87,13 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
         <View style={styles.header}>
+            <View style={{flexDirection:'row'}}>
             <Text style={styles.headerText}>ADVANCED DEVELOPMENT LTD.</Text>
-            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:40}}>
+            <TouchableOpacity style={styles.profileButton} onPress={() => {navigation.navigate('Profile')}}>
+              <Ionicons name='person' size={20}/>
+            </TouchableOpacity>
+            </View>
+            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:17}}>
             <TouchableOpacity>
                 <Text style={styles.activeTabText}>HOME</Text>
             </TouchableOpacity>
@@ -86,7 +104,10 @@ export default function HomeScreen() {
                 <Text style={styles.tabText}>BASKET</Text>
             </TouchableOpacity>
             </View>
+
+
         </View>
+
 
         <View style={styles.searchBar}>
           <Ionicons name='search-outline' size={20} style={{marginLeft:10}}/>
@@ -182,17 +203,20 @@ const ListItem = (props) => {
           <Image style={{width:170, height:110, alignSelf:'center', marginTop:3, borderRadius:20}} source={{uri:props.imageLink}}/>
         </View>
           <View>
-            <Text style={{fontWeight:900, marginTop:20, alignSelf:'center', fontSize:10, }}>{props.shoeName.toUpperCase()}</Text>
+            <Text style={{fontWeight:900, marginTop:10, alignSelf:'center', fontSize:10, }}>{props.shoeName.toUpperCase()}</Text>
             <Text style={{alignSelf:'center', marginTop:7, fontWeight:500, fontSize:13}}>£{props.price}</Text>
             <Text style={{fontSize:7, alignSelf:'center', textAlign:'center', margin:10}}>{props.description}</Text>
             <TouchableOpacity style={styles.button}>
-              <Text style={{fontSize:9, textAlign:'center'}}>MORE INFORMATION</Text>
+              <Text style={{fontSize:9, textAlign:'center'}}>ADD TO BASKET</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+              <Text style={{fontSize:9, textAlign:'center'}}>MORE DETAILS</Text>
             </TouchableOpacity>
           </View>
-        
       </View>
   );
 }
+
 
 
 const styles = StyleSheet.create({
@@ -207,7 +231,7 @@ const styles = StyleSheet.create({
   headerText: {
     color:'white',
     fontSize:15,
-    marginTop:48,
+    marginTop:55,
     marginLeft:5,
     fontWeight:'bold',
     letterSpacing:0.7
@@ -246,7 +270,8 @@ const styles = StyleSheet.create({
     shadowOpacity:0.5,
     shadowRadius:3,
     shadowOffset:{width:2, height:2},
-    justifyContent:'center'
+    justifyContent:'center',
+    marginBottom:5
   },
   search: {
     fontSize:14,
@@ -264,5 +289,15 @@ const styles = StyleSheet.create({
     alignSelf:'center',
     marginTop:10,
     height:29
+  },
+  profileButton: {
+    height:40,
+    width:40,
+    backgroundColor:'gray',
+    borderRadius:20,
+    marginLeft:70,
+    marginTop:50,
+    alignItems:'center',
+    justifyContent:'center'
   }
 });

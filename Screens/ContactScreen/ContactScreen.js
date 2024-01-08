@@ -4,8 +4,21 @@ import { useNavigation } from '@react-navigation/native';
 import { TextInput } from 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { createStackNavigator } from '@react-navigation/stack';
+import ProfileScreen from '../ProfileScreen/ProfileScreen';
+
+const Stack = createStackNavigator();
 
 export default function ContactScreen() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name='Default' component={DefaultContactScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+      <Stack.Screen name='Profile' component={ProfileScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+    </Stack.Navigator>
+  );
+}
+
+function DefaultContactScreen() {
   const navigation = useNavigation();
   const [ nameTyped, setNameTyped ] = useState('');
   const [ subjectTyped, setSubjectTyped ] = useState('');
@@ -18,8 +31,13 @@ export default function ContactScreen() {
 
   return (
         <View style={styles.header}>
-            <Text style={styles.headerText}>ADVANCED DEVELOPMENT LTD.</Text>
-            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:40}}>
+            <View style={{flexDirection:'row'}}>
+              <Text style={styles.headerText}>ADVANCED DEVELOPMENT LTD.</Text>
+              <TouchableOpacity style={styles.profileButton} onPress={() => {navigation.navigate('Profile')}}>
+                <Ionicons name='person' size={20}/>
+              </TouchableOpacity>
+            </View>
+            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:17}}>
             <TouchableOpacity onPress={() => {navigation.navigate('Home')}}>
                 <Text style={styles.tabText}>HOME</Text>
             </TouchableOpacity>
@@ -81,7 +99,17 @@ export default function ContactScreen() {
               <Text style={{color:'white', fontWeight:'bold', letterSpacing:0.7}}>Send</Text>
             </TouchableOpacity>
 
-            <View style={{flexDirection:'row', justifyContent:'space-evenly', marginTop:200}}>
+            <View style={{marginTop:45}}>
+              <View>
+                <Text style={{textAlign:'center', margin:15, opacity:0.4, fontSize:10}}>By submitting the above data, you agree to the collection and use of information in accordance with our Privacy Policy. Your personal data will be used to contact you via email, telephone call or SMS regarding informative communications in line with your enquiry. </Text>
+              </View>
+              <TouchableOpacity style={styles.privacyButton} onPress={() => Linking.openURL('https://www.privacypolicies.com/live/e511ea96-8631-4954-9955-d8f9c595343c')}>
+                <Text style={{textDecorationLine:'underline', color:'blue', fontSize:10}}>View our full privacy policy here</Text>
+              </TouchableOpacity>
+            </View>
+
+
+            <View style={{flexDirection:'row', justifyContent:'space-evenly', marginTop:70}}>
             <TouchableOpacity style={styles.roundButton} onPress={() => Linking.openURL('mailto:s5430870@bournemouth.ac.uk')}>
               <Ionicons name='mail' color='white' size={30}/>
             </TouchableOpacity>
@@ -113,7 +141,7 @@ const styles = StyleSheet.create({
   headerText: {
     color:'white',
     fontSize:15,
-    marginTop:48,
+    marginTop:55,
     marginLeft:5,
     fontWeight:'bold',
     letterSpacing:0.7
@@ -186,5 +214,20 @@ const styles = StyleSheet.create({
     shadowColor:'black',
     shadowRadius:10,
     shadowOpacity:0.4
+  },
+  profileButton: {
+    height:40,
+    width:40,
+    backgroundColor:'gray',
+    borderRadius:20,
+    marginLeft:70,
+    marginTop:50,
+    alignItems:'center',
+    justifyContent:'center'
+  },
+  privacyButton: {
+    marginTop:0,
+    alignSelf:'center',
+    opacity:0.6
   }
 });

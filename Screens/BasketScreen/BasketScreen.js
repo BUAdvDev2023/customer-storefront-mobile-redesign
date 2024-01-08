@@ -8,8 +8,22 @@ import { SearchBar } from 'react-native-screens';
 import { TextInput } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import getBasketShoeData from './basketShoes';
+import { createStackNavigator } from '@react-navigation/stack';
+import ProfileScreen from '../ProfileScreen/ProfileScreen';
+
+const Stack = createStackNavigator();
 
 export default function BasketScreen() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name='Default' component={DefaultBasketScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+      <Stack.Screen name='Profile' component={ProfileScreen} options={{headerShown:false, presentation:'containedModal'}}/>
+    </Stack.Navigator>
+  );
+}
+
+
+function DefaultBasketScreen() {
 
   let items2 = getBasketShoeData();
   const [basketShoeData, setBasketShoeData] = useState(items2);
@@ -45,8 +59,13 @@ export default function BasketScreen() {
   return (
     <View style={styles.container}>
         <View style={styles.header}>
-            <Text style={styles.headerText}>ADVANCED DEVELOPMENT LTD.</Text>
-            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:40}}>
+            <View style={{flexDirection:'row'}}>
+              <Text style={styles.headerText}>ADVANCED DEVELOPMENT LTD.</Text>
+              <TouchableOpacity style={styles.profileButton} onPress={() => {navigation.navigate('Profile')}}>
+                <Ionicons name='person' size={20}/>
+              </TouchableOpacity>
+            </View>
+            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:17}}>
             <TouchableOpacity onPress={() => {navigation.navigate('Home')}}>
                 <Text style={styles.tabText}>HOME</Text>
             </TouchableOpacity>
@@ -115,7 +134,7 @@ const styles = StyleSheet.create({
   headerText: {
     color:'white',
     fontSize:15,
-    marginTop:48,
+    marginTop:55,
     marginLeft:5,
     fontWeight:'bold',
     letterSpacing:0.7
@@ -171,4 +190,14 @@ const styles = StyleSheet.create({
     shadowOffset:{width:2, height:2},
     justifyContent:'center',
   },
+  profileButton: {
+    height:40,
+    width:40,
+    backgroundColor:'gray',
+    borderRadius:20,
+    marginLeft:70,
+    marginTop:50,
+    alignItems:'center',
+    justifyContent:'center'
+  }
 });
