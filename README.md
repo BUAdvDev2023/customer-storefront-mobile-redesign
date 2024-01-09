@@ -12,7 +12,7 @@ Figma Designs:
 - Install the Expo Go app on smartphone
 - Run the command npx expo start --tunnel
 - Scan QR code on phone camera (iOS) or on Expo Go app (Android)
-#### In emulator
+#### In emulator:
 - Run the command npx expo start
 - Press 'a' to open in Android emulator
 
