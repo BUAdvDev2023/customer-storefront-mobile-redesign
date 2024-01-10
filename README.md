@@ -21,6 +21,10 @@ Figma Designs:
 ### GDPR Considerations
 The contact screen of the application gives users the option to input some basic details to contact the company. A declaration of the data usage policy is stated below the input fields, alog with a link to our full privacy policy, which can be found at https://www.privacypolicies.com/live/e511ea96-8631-4954-9955-d8f9c595343c (Privacy Policies, 2024)
 
+The documentation for our security strategy can be found here:
+[Security Strategy CSM.docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889053/Security.Strategy.CSM.docx)
+
+
 
 ### Database:
 In future iterations, a database would be developed for the app, for storage of customer data, product data, cart data, and order data. The structure of this database is described in the ERD below
