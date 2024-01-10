@@ -24,6 +24,12 @@ The contact screen of the application gives users the option to input some basic
 The documentation for our security strategy can be found here:
 [Security Strategy CSM.docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889053/Security.Strategy.CSM.docx)
 
+### Testing:
+Usability testing has been carried out to gain feedback on the interface design, and how intuitive the system is to use.
+
+[System.Usability.Scale - Olivia Grant 2.docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889160/System.Usability.Scale.-.Olivia.Grant.2.docx)
+
+[System.Usability.Scale (Maggie Foulds).docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889280/System.Usability.Scale.Maggie.Foulds.docx)
 
 
 ### Database:
