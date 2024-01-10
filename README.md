@@ -31,6 +31,8 @@ Usability testing has been carried out to gain feedback on the interface design,
 
 [System.Usability.Scale (Maggie Foulds).docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889280/System.Usability.Scale.Maggie.Foulds.docx)
 
+[System.Usability.Scale (Shay-Khamar Kelly).docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13890320/System.Usability.Scale.Shay-Khamar.Kelly.docx)
+
 Test cases and outcomes are listed in the testing documentation below:
 
 [Test.Document Storefront.docx](https://github.com/BUAdvDev2023/customer-storefront-mobile/files/13889839/Test.Document.Storefront.docx)
