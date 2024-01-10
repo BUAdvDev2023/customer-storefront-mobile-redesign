@@ -11,12 +11,17 @@ Figma Designs:
 #### On personal smartphone:
 - Install dependancies
 - Install the Expo Go app on smartphone
-- Run the command 'npx expo start --tunnel'
+- Run the command `npx expo start --tunnel`
 - Scan QR code on phone camera (iOS) or on Expo Go app (Android)
 #### In emulator:
 - Install dependancies
-- Run the command 'npx expo start'
+- Run the command `npx expo start`
 - Press 'a' to open in Android emulator
 
 ### GDPR Considerations
-The contact screen of the application gives users the option to input some basic details to contact the company. A declaration of the data usage policy is stated below the input fields, alog with a link to our full privacy policy, which can be found at https://www.privacypolicies.com/live/e511ea96-8631-4954-9955-d8f9c595343c
+The contact screen of the application gives users the option to input some basic details to contact the company. A declaration of the data usage policy is stated below the input fields, alog with a link to our full privacy policy, which can be found at https://www.privacypolicies.com/live/e511ea96-8631-4954-9955-d8f9c595343c (Privacy Policies, 2024)
+
+
+
+#### References:
+Privacy Policies, 2024. Privacy Policy Generator. [online] Available from: https://www.privacypolicies.com/privacy-policy-generator/ [Accessed 8 January 2024]
