@@ -22,6 +22,10 @@ Figma Designs:
 The contact screen of the application gives users the option to input some basic details to contact the company. A declaration of the data usage policy is stated below the input fields, alog with a link to our full privacy policy, which can be found at https://www.privacypolicies.com/live/e511ea96-8631-4954-9955-d8f9c595343c (Privacy Policies, 2024)
 
 
+### Database:
+In future iterations, a database would be developed for the app, for storage of customer data, product data, cart data, and order data. The structure of this database is described in the ERD below
+![AdvDev ERD](https://github.com/BUAdvDev2023/customer-storefront-mobile/assets/91216061/0595cec1-90a7-48a5-a7b6-b55d392bd333)
+
 
 #### References:
 Privacy Policies, 2024. Privacy Policy Generator. [online] Available from: https://www.privacypolicies.com/privacy-policy-generator/ [Accessed 8 January 2024]
