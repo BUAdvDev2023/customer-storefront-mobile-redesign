@@ -21,7 +21,7 @@ Before and After Screenshots
 ![IMG_3908](https://github.com/user-attachments/assets/6d2fbb2a-b0d4-45e7-8437-fe93e431d4d7)
 
 
-Changes and Enhancements
+**Changes and Enhancements
 1. Replacement of Stack Navigation with Bottom Tab Navigation
 Before: The application used a stack navigation system which caused navigation issues and cluttered the user experience. Users had to navigate back and forth multiple times to access different sections of the app.
 
