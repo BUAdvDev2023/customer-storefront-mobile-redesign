@@ -22,60 +22,60 @@ Before and After Screenshots
 
 
 **Changes and Enhancements**
-1. Replacement of Stack Navigation with Bottom Tab Navigation
+**1. Replacement of Stack Navigation with Bottom Tab Navigation**
 Before: The application used a stack navigation system which caused navigation issues and cluttered the user experience. Users had to navigate back and forth multiple times to access different sections of the app.
 
 After: Replaced the stack navigation with a bottom tab navigation bar. This modern approach provides a more intuitive and accessible way for users to switch between the main sections of the app. Bottom navigation bars are a common practice in mobile design as they offer consistent and easy access to primary areas of an app, enhancing overall usability (Material Design, 2020).
 
-2. Home Screen Design Update
+**2. Home Screen Design Update**
 Before: The home screen design was outdated and did not provide an engaging user experience.
 
 After: Updated the design of the home screen to improve its visual appeal and user engagement. Enhanced the layout, typography, and color scheme to align with modern design standards. A well-designed home screen can significantly increase user retention and satisfaction (NNGroup, 2018).
 
-3. Modal Filter Screen for Price and Color Filters
+**3. Modal Filter Screen for Price and Color Filters**
 Before: The price and color filter drop-downs were cluttering the home screen, making it less user-friendly.
 
 After: Moved the price and color filters to a separate modal filter screen. This declutters the home screen and provides users with a dedicated space to apply filters, improving the user experience. Modal dialogs are effective for focusing user attention on specific tasks without distractions (UX Design, 2020).
 
-4. Search Feature Relocated to a New Search Screen
+**4. Search Feature Relocated to a New Search Screen**
 Before: The search bar on the home screen was not visually appealing and disrupted the layout.
 
 After: Removed the search bar from the home screen and moved the search functionality to a new search screen accessed via stack navigation. This change provides a cleaner home screen while still offering powerful search capabilities. Effective search functionality is crucial for user satisfaction, especially in e-commerce apps (Baymard Institute, 2021).
 
-5. Tab Slider for Shoe Categories
+**5. Tab Slider for Shoe Categories**
 Before: Shoe categories were accessed via a drop-down menu, which was not intuitive for users.
 
 After: Implemented a tab slider to easily switch between common shoe categories: Men's, Women's, Kids, and All Shoes. This replaces the category drop-down and improves category navigation. Tab sliders are a preferred method for category navigation in mobile apps, enhancing discoverability and ease of use (Smashing Magazine, 2019).
 
-6. Improved Storefront Interface Design and Consistency
+**6. Improved Storefront Interface Design and Consistency**
 Before: The app lacked a consistent design language, leading to a fragmented user experience.
 
 After: Enhanced the overall design and consistency of the app's storefront interface. Ensured that fonts, colors, and layout elements are uniform throughout the app. Consistent design is essential for creating a seamless and professional user experience (Interaction Design Foundation, 2019).
 
-7. Basket Screen Design Improvements
+**7. Basket Screen Design Improvements**
 Before: The basket screen was basic and lacked detailed information.
 
 After: Redesigned the basket screen to include more user information and improve its visual appeal. Added elements such as product images, detailed descriptions, and pricing information. Enhanced the checkout process to be more intuitive. A well-designed basket screen can significantly reduce cart abandonment rates (Baymard Institute, 2021).
 
-8. Enhanced Profile Screen Design
+**8. Enhanced Profile Screen Design**
 Before: The profile screen was plain and did not engage users effectively.
 
 After: Updated the profile screen to make it more visually appealing and user-friendly. Improved layout and added relevant icons to enhance the user experience. Engaging profile screens can increase user interaction and personalization (UX Planet, 2020).
 
-Justification and Industry Best Practices
-User Navigation
+**Justification and Industry Best Practices**
+**User Navigation**
 Bottom tab navigation bars provide a more consistent and accessible navigation structure, which is crucial for user satisfaction and ease of use. This method is widely adopted in the industry for its efficiency and user-friendliness (Material Design, 2020).
 
-Visual Design
+**Visual Design**
 Modern, clean, and consistent design enhances the overall user experience, making the app more engaging and easier to navigate. Consistency in design helps in building user trust and provides a seamless experience (Interaction Design Foundation, 2019).
 
-User Engagement
+**User Engagement**
 Enhancing screens such as the home, basket, and profile screens increases user engagement and satisfaction. Providing detailed information and a pleasant visual experience can significantly impact user retention and reduce abandonment rates (Baymard Institute, 2021).
 
-Usability Improvements
+**Usability Improvements**
 Moving filters and search functionalities to dedicated screens declutters the main interface and allows users to perform these tasks more efficiently. Modal dialogs and dedicated screens are effective methods to focus user attention and improve task completion rates (UX Design, 2020).
 
-References
+**References**
 Baymard Institute. (2021). E-Commerce UX Research. [online] Available at: https://baymard.com/research/ecommerce-ux
 Interaction Design Foundation. (2019). Consistency in User Interface Design. [online] Available at: https://www.interaction-design.org/literature/article/consistency-in-user-interface-design
 Material Design. (2020). Bottom Navigation. [online] Available at: https://material.io/components/bottom-navigation
