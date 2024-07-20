@@ -21,9 +21,17 @@ Before and After Screenshots
 <img width="200" src="https://github.com/user-attachments/assets/dceca057-2433-4f17-8dd6-e76ae94b9dae">
 <img width="200" src="https://github.com/user-attachments/assets/9f7c88d1-db66-49cd-aec0-1cd24dcfd1ea">
 
+**Search Screen With Search Results**
+
 <img width="200" src="https://github.com/user-attachments/assets/f7b45e2f-170b-4c03-9521-9cc8b854339e">
 <img width="200" src="https://github.com/user-attachments/assets/8b915ad3-752f-4983-a3eb-380d86009117">
+
+**Basket Screen Design Improvements**
+
 <img width="200" src="https://github.com/user-attachments/assets/4e498c21-f041-40ee-9a05-fad645406976">
+
+**Profile Screen Design Improvements**
+
 <img width="200" src="https://github.com/user-attachments/assets/6d2fbb2a-b0d4-45e7-8437-fe93e431d4d7">
 
 
