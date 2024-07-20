@@ -5,7 +5,7 @@ import { TextInput } from 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
-import ProfileScreen from '../ProfileScreen/ProfileScreen';
+import ProfileScreen from './ProfileScreen';
 
 const Stack = createStackNavigator();
 
